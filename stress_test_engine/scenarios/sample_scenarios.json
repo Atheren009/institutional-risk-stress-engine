@@ -1,0 +1,32 @@
+{
+  "scenarios": [
+    {
+      "name": "parallel_rate_shock_200bp",
+      "description": "Parallel interest rate shift of +200 basis points",
+      "rate_shocks": [
+        {
+          "type": "parallel",
+          "params": {
+            "shift_bp": 200
+          }
+        }
+      ],
+      "vol_shocks": [],
+      "credit_shocks": []
+    },
+    {
+      "name": "credit_spread_widening_300bp",
+      "description": "Credit spread widening of 300 basis points",
+      "rate_shocks": [],
+      "vol_shocks": [],
+      "credit_shocks": [
+        {
+          "type": "parallel",
+          "params": {
+            "spread_bp": 300
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+id,instrument_type,quantity,underlying,maturity,strike,notional
+bond_1,bond,1000000,US Treasury 5Y,5Y,,1000
+swap_1,swap,1,5Y IRS,,,"10,000,000"
+option_1,option,100,SPY,,400,100

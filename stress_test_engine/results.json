@@ -1,0 +1,66 @@
+{
+  "total_scenarios_run": 3,
+  "portfolio_metrics": {
+    "initial_value": 94409353677770.39,
+    "max_loss": -5059317166006.797,
+    "avg_loss": 2662521190796.693,
+    "volatility": 8705557619990.61
+  },
+  "risk_metrics": {
+    "var_95": -5059317166006.797,
+    "var_99": -5059317166006.797,
+    "expected_shortfall_95": -5059317166006.797,
+    "expected_shortfall_99": -5059317166006.797,
+    "worst_case_loss": -5059317166006.797,
+    "stress_var": 5059317166006.797
+  },
+  "capital_metrics": {
+    "capital_requirement": 7083044032409.516,
+    "capital_ratio": 0.07502481222977897,
+    "capital_coverage_ratio": 18.66049322072558,
+    "stress_capital_buffer": 2023726866402.7188
+  },
+  "scenario_analysis": {
+    "worst_scenario": "parallel_rate_shock_200bp_up",
+    "best_scenario": "parallel_rate_shock_300bp_down",
+    "scenario_count_positive": 2,
+    "scenario_count_negative": 1
+  },
+  "sensitivity_analysis": {
+    "rate_sensitivity": {
+      "avg_impact_per_rate_bp": 0.0,
+      "convexity_measure": 0.0
+    },
+    "vol_sensitivity": {
+      "vega_exposure": 0.0,
+      "vol_convexity": 0.0
+    },
+    "credit_sensitivity": {
+      "credit_exposure": 0.0,
+      "spread_duration": 0.0
+    }
+  },
+  "results_summary": {
+    "parallel_rate_shock_200bp_up": {
+      "base_value": 94409353677770.39,
+      "shocked_value": 89350036511763.6,
+      "pnl_impact": -5059317166006.797,
+      "pnl_percentage": -5.358915159269926,
+      "stress_severity": 0.05358915159269926
+    },
+    "parallel_rate_shock_300bp_down": {
+      "base_value": 94409353677770.39,
+      "shocked_value": 106506539894110.17,
+      "pnl_impact": 12097186216339.781,
+      "pnl_percentage": 12.813546269608858,
+      "stress_severity": 0.12813546269608858
+    },
+    "steepener_shock": {
+      "base_value": 94409353677770.39,
+      "shocked_value": 95359048199827.48,
+      "pnl_impact": 949694522057.0938,
+      "pnl_percentage": 1.0059326592770739,
+      "stress_severity": 0.010059326592770739
+    }
+  }
+}

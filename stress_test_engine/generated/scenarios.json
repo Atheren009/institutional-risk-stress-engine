@@ -1,0 +1,81 @@
+[
+  {
+    "name": "parallel_rate_shock_200bp_up",
+    "description": "Parallel 200bp increase in all rates",
+    "rate_shocks": [
+      {
+        "type": "parallel",
+        "params": {
+          "shift_bp": 200
+        }
+      }
+    ],
+    "vol_shocks": [],
+    "credit_shocks": []
+  },
+  {
+    "name": "parallel_rate_shock_300bp_down",
+    "description": "Parallel 300bp decrease in all rates",
+    "rate_shocks": [
+      {
+        "type": "parallel",
+        "params": {
+          "shift_bp": -300
+        }
+      }
+    ],
+    "vol_shocks": [],
+    "credit_shocks": []
+  },
+  {
+    "name": "steepener_shock",
+    "description": "Short rates +50bp, Long rates +200bp (steepening)",
+    "rate_shocks": [
+      {
+        "type": "steepener",
+        "params": {
+          "short_shift_bp": 50,
+          "long_shift_bp": 200
+        }
+      }
+    ],
+    "vol_shocks": [],
+    "credit_shocks": []
+  },
+  {
+    "name": "flatten_shock",
+    "description": "Short rates +100bp, Long rates -50bp (inversion)",
+    "rate_shocks": [
+      {
+        "type": "steepener",
+        "params": {
+          "short_shift_bp": 100,
+          "long_shift_bp": -50
+        }
+      }
+    ],
+    "vol_shocks": [],
+    "credit_shocks": []
+  },
+  {
+    "name": "key_rate_2s10s",
+    "description": "2Y +150bp, 10Y -100bp (inversion)",
+    "rate_shocks": [
+      {
+        "type": "key_rate",
+        "params": {
+          "key_tenors": [
+            2,
+            10
+          ],
+          "key_shifts_bp": [
+            150,
+            -100
+          ]
+        }
+      }
+    ],
+    "vol_shocks": [],
+    "credit_shocks": []
+  }
+]
