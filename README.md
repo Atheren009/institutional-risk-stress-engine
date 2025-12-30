@@ -1,4 +1,4 @@
-# Regulatory Stress Testing Engine
+# Instituional Stress Testing Engine
 
 A comprehensive framework for conducting regulatory-style stress tests to evaluate portfolio resilience under adverse market conditions. This system answers the core regulatory question: "If the market breaks tomorrow, how much money do we lose — and do we survive?"
 
